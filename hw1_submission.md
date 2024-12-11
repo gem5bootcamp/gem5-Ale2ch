@@ -26,6 +26,7 @@ As the threads increases the performances gets worst but stabilizes as the amoun
 I think its because this is a multi threaded processor, two threads are assigned to the same core and slow each other.
 
 Question 2:
+
 (a) 
 all-opt-native:
 
@@ -55,6 +56,7 @@ Compared to the same workload on one thread, the speedups/slowdowns are:
 	6 threads: X0.70
 
 Question 3:
+
 (a)
 By far the most important optimization is adding padding to the results array, as each thread
 had to write on it.
