@@ -59,11 +59,39 @@ Question 3:
 
 (a)
 By far the most important optimization is adding padding to the results array, as each thread
-had to write on it.
+had to write on it. (Rest of the data at the end of md)
 
 (b)
 For each thread their write address are in the same 64B block,  putting them in the same L1 cache line, and due to MESI cache coherence each write on a thread invalidates the copies of that cache line in the other caches. If we put the write address for each thread on a different line, there 
 wont be collision and no invalidations.
+
+Question 4:
+
+(a)
+
+(b)
+
+Question 5:
+
+Question 6:
+
+Question 7:
+
+Question 8:
+
+(a)
+
+(b)
+
+
+Question 9:
+
+
+
+
+
+
+
 
 chunking-native:
 
