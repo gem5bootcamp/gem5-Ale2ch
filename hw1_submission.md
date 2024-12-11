@@ -1,6 +1,7 @@
 I have an amd r5 5600X with 6 cores so the tests are up to 6 threads.
 Question 1:
 naive-native:
+
 	1 thread:
 	0.147311+0.14714+0.150451+0.152551+0.149961+
 	0.150141+0.153021+0.15417+0.153961+0.1527
@@ -27,6 +28,7 @@ I think its because this is a multi threaded processor, two threads are assigned
 Question 2:
 (a) 
 all-opt-native:
+
 	1 thread:
 	0.157701+0.161421+0.1577+0.155081+0.152211
 	avg:0.1568228
@@ -62,6 +64,7 @@ For each thread their write address are in the same 64B block,  putting them in 
 wont be collision and no invalidations.
 
 chunking-native:
+
 	1 thread:
 	0.155281+0.163691+0.155891+0.16185+0.162111
 	avg:0.1597648
@@ -75,6 +78,7 @@ chunking-native:
 	0.217521+0.216571+0.215501+0.213641+0.214112
 	avg:0.2154692
 res-race-opt-native:
+
 	1 thread:
 	0.166891+0.16868+0.154851+0.15876+0.15706
 	avg:0.1612484
@@ -88,6 +92,7 @@ res-race-opt-native:
 	0.210891+0.204701+0.220221+0.218391+0.231531
 	avg:0.217147
 chunking-res-race-opt-native:
+
 	1 thread:
 	0.171781+0.161701+0.162501+0.158881+0.164351
 	avg:0.163843
@@ -101,6 +106,7 @@ chunking-res-race-opt-native:
 	0.218911+0.207981+0.211391+0.222581+0.217361
 	avg:0.215645
 block-race-opt-native:
+
 	1 thread:
 	0.153851+0.157191+0.157371+0.163771+0.159221
 	avg:0.158281
